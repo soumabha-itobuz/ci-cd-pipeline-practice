@@ -1,12 +1,19 @@
 {
-  "name": "practice",
+  "name": "playwright-ci-cd-practice",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:bdd": "playwright test example-bdd.spec.ts",
+    "test:api": "playwright test api.spec.ts",
+    "report": "playwright show-report"
+  },
+  "keywords": ["playwright", "testing", "bdd"],
+  "author": "soumabha-itobuz",
   "license": "ISC",
-  "description": "",
+  "description": "Simple Playwright testing with BDD and CI/CD",
   "devDependencies": {
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.7.2"
